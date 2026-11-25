@@ -3,6 +3,13 @@
 Kanał wersji wtyczki. Instalacje czytają stąd `latest.json` (przycisk „Sprawdź teraz"
 w ustawieniach wtyczki). Paczki ZIP dostajesz tam, gdzie kupiłeś wtyczkę.
 
+## 1.0.4 — 2026-11-25
+
+### Zgodność
+- Wymagany WooCommerce obniżony z 8.2 do **8.0** — sprawdzone na WordPress 6.3.5
+  z WooCommerce 8.0.5 (PHPUnit, rezerwacja przez kasę blokową i klasyczną, panel).
+  Sklepy na starszym WooCommerce nie muszą go aktualizować.
+
 ## 1.0.3 — 2026-11-25
 
 ### Nowe
