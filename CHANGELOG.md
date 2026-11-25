@@ -3,6 +3,26 @@
 Kanał wersji wtyczki. Instalacje czytają stąd `latest.json` (przycisk „Sprawdź teraz"
 w ustawieniach wtyczki). Paczki ZIP dostajesz tam, gdzie kupiłeś wtyczkę.
 
+## 1.0.2 — 2026-11-25
+
+### Poprawki
+- **Wygasła lub anulowana rezerwacja zwraca stany magazynowe.** Wcześniej towar
+  zdejmowany ze stanu przy rezerwacji nie wracał do sprzedaży po wygaśnięciu ani po
+  ręcznym anulowaniu — WooCommerce nie widział, że stan został zdjęty.
+- **Oświadczenie w kasie blokowej działa na każdej wersji WooCommerce.** Checkbox
+  jest teraz w polu metody „Płatność w sklepie przy odbiorze”, więc pokazuje się tylko
+  przy koszyku z towarem na pozwolenie. Bez zaznaczenia zamówienia nie da się złożyć.
+- **Odbiór osobisty zaznacza się sam.** Nowsze WooCommerce celowo nie wybiera odbioru
+  domyślnie, więc kasa zgłaszała „to zamówienie wymaga opcji wysyłki”. Dla koszyka
+  z towarem na pozwolenie odbiór jest jedyną opcją, więc wtyczka wybiera go od razu.
+- **Nieudana próba nie blokuje następnej.** Na nowszym WooCommerce komunikat
+  o brakującym oświadczeniu zostawał w sesji i odrzucał kolejną, już poprawną próbę.
+
+### Zgodność
+- Wymagany WooCommerce obniżony z 8.9 do **8.2** — sklepy na WordPress 6.3 nie mogą
+  zainstalować nowszego WooCommerce. Sprawdzone na WP 6.3.5 z WooCommerce 8.2.2 i 8.5.2
+  oraz na najnowszym WordPressie i WooCommerce (HPOS).
+
 ## 1.0.1 — 2026-11-25
 
 ### Zgodność
