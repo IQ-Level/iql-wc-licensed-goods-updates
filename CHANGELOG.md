@@ -3,6 +3,25 @@
 Kanał wersji wtyczki. Instalacje czytają stąd `latest.json` (przycisk „Sprawdź teraz"
 w ustawieniach wtyczki). Paczki ZIP dostajesz tam, gdzie kupiłeś wtyczkę.
 
+## 1.0.3 — 2026-11-25
+
+### Nowe
+- **Oznaczanie tagiem.** Checkbox „Wymaga pozwolenia” jest teraz także przy tagach
+  produktów (Produkty → Tagi). Produkt z takim tagiem jest „na pozwolenie”
+  niezależnie od kategorii. Kolumna na liście produktów pokazuje, skąd to wynika
+  (z produktu / z kategorii / z tagu).
+- **Jasny komunikat dla klienta.** Po dodaniu towaru na pozwolenie do koszyka:
+  „… jest dostępny tylko na rezerwację — z odbiorem osobistym i płatnością w sklepie”.
+  Gdy w koszyku jest też zwykły towar, koszyk i kasa tłumaczą dwie drogi: wszystko
+  jednym zamówieniem z odbiorem i płatnością na miejscu albo zwykłe produkty osobnym
+  zamówieniem, a towar na pozwolenie drugim. Teksty edytowalne w ustawieniach.
+
+### Poprawki
+- **Kasa klasyczna (Elementor) była zablokowana dla towaru na pozwolenie.**
+  Zamiast formularza pokazywała się „There are some issues with the items in your
+  cart” — kontrola odbioru osobistego działała, zanim WooCommerce policzył wysyłkę.
+- Komunikat w koszyku klasycznym pokazywał się dopiero na następnej stronie.
+
 ## 1.0.2 — 2026-11-25
 
 ### Poprawki
