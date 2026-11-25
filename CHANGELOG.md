@@ -3,6 +3,12 @@
 Kanał wersji wtyczki. Instalacje czytają stąd `latest.json` (przycisk „Sprawdź teraz"
 w ustawieniach wtyczki). Paczki ZIP dostajesz tam, gdzie kupiłeś wtyczkę.
 
+## 1.0.1 — 2026-11-25
+
+### Zgodność
+- Obniżono wymaganą wersję WordPressa z 6.4 na **6.3** — instalacja blokowała się
+  na 6.3.x, choć wtyczka nie używa funkcji dostępnych dopiero od 6.4.
+
 ## 1.0.0 — 2026-11-25
 
 Pierwsze wydanie.
